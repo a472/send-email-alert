@@ -11,7 +11,7 @@ This app will send periodic email alert using CELERY and CELERY-BEAT After hitti
 
 *sudo systemctl start rabbitmq-server*
 
-*sudo systemctl status rabbitmq-server
+*sudo systemctl status rabbitmq-server*
 
 ### You can check queue dashboard on localhost:15672 after enabling plugins
 
