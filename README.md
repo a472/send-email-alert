@@ -51,6 +51,6 @@ celery -A myapi worker -l info
 celery -A myapi beat -l info
 
 ### now hit api(http://127.0.0.1:8000/index) to get periodic email like this after every 2 minutes
-![mail snapshot](customer_churn.png)
+![mail snapshot](customer_churn.PNG)
 
 
