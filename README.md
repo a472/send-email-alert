@@ -2,8 +2,9 @@
 This app will send periodic email alert using CELERY and CELERY-BEAT After hitting soecific django API 
 
 In linux Install rabbitmq server..
-sudo apt-get install erlang
-sudo apt-get install rabbitmq-server*
+*sudo apt-get install erlang*
+
+*sudo apt-get install rabbitmq-server*
 
 *sudo systemctl enable rabbitmq-server*
 
