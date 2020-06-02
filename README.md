@@ -41,16 +41,16 @@ CELERY_BEAT_SCHEDULE = {<br />
                                       'schedule': crontab(minute='*/2', hour='*'), &emsp; <!--- This will send email after every 2 min.---><br />
                                       },
 
-#Run django server from myapi folder<br />
+### Run django server from myapi folder<br />
 python3 manage.py runserver
 
-#Run celery worker from myapi folder<br />
+### Run celery worker from myapi folder<br />
 celery -A myapi worker -l info
 
-#Run celery beat from myapi folder <br />
+### Run celery beat from myapi folder <br />
 celery -A myapi beat -l info
 
-#now hit api(http://127.0.0.1:8000/index) to get periodic email after 2 mins look like this
-![](customer_churn.png)
+### now hit api(http://127.0.0.1:8000/index) to get periodic email like this after every 2 minutes
+![mail snapshot](customer_churn.png)
 
 
