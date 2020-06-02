@@ -19,7 +19,5 @@ from telecom import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',views.index),
-    path('telecom-churn/', views.get_report),
-    
+    path('index/',views.index),    
 ]
