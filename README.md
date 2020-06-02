@@ -16,17 +16,20 @@ This app will send periodic email alert using CELERY and CELERY-BEAT After hitti
 ### You can check queue dashboard on localhost:15672 after enabling plugins
 
 *sudo rabbitmq-plugins enable rabbitmq_management*
+
 default username: guest
+
 default password: guest
 
 ### update settings.py
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = "example@gmail.com" [//]: <> (put your email here.)
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = 'PASSWORD' [//]: <> (put your email password here.)
-EMAIL_RECEIVER_LIST = ['RECEIVER1','RECEIVER2']
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'<br />
+EMAIL_HOST_USER = "example@gmail.com" [//]: <> (put your email here.)<br />
+EMAIL_HOST = "smtp.gmail.com"<br />
+EMAIL_PORT = 587<br />
+EMAIL_USE_TLS = True<br />
+EMAIL_HOST_PASSWORD = 'PASSWORD' [//]: <> (put your email password here.)<br />
+EMAIL_RECEIVER_LIST = ['RECEIVER1','RECEIVER2']<br />
 
 
 CELERY_BROKER_URL = 'amqp://guest:guest@localhost'
