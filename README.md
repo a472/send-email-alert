@@ -38,7 +38,7 @@ CELERY_TIMEZONE = 'Asia/Kolkata'<br />
 CELERY_BEAT_SCHEDULE = {<br />
                 'hourly_pullevents': {<br />
                              'task': 'telecom.tasks.send_email_task',<br />
-                                      'schedule': crontab(minute='*/2', hour='*'), &emsp; <!--- This will send email after every 2 min.---><br />
+                                      'schedule': crontab(minute='\*/2', hour='\*'), &emsp; <!--- This will send email after every 2 min.---><br />
                                       },
 
 ### Run django server from myapi folder<br />
