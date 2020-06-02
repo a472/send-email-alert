@@ -24,7 +24,7 @@ default password: guest
 ### update settings.py
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'<br />
-EMAIL_HOST_USER = "example@gmail.com" <!--- put your email here. ---> <br />
+EMAIL_HOST_USER = "example@gmail.com" &emsp; <!--- put your email here. ---> <br />
 EMAIL_HOST = "smtp.gmail.com"<br />
 EMAIL_PORT = 587<br />
 EMAIL_USE_TLS = True<br />
