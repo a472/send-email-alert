@@ -3,11 +3,11 @@ This app will send periodic email alert using CELERY and CELERY-BEAT After hitti
 
 In linux Install rabbitmq server..
 sudo apt-get install erlang
-sudo apt-get install rabbitmq-server
+sudo apt-get install rabbitmq-server*
 
-*sudo systemctl enable rabbitmq-server
+*sudo systemctl enable rabbitmq-server*
 
-*sudo systemctl start rabbitmq-server
+*sudo systemctl start rabbitmq-server*
 
 *sudo systemctl status rabbitmq-server
 
