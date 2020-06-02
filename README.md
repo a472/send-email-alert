@@ -24,11 +24,11 @@ default password: guest
 ### update settings.py
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'<br />
-EMAIL_HOST_USER = "example@gmail.com" <!--- put your email here. --> <br />
+EMAIL_HOST_USER = "example@gmail.com" <!--- put your email here. ---> <br />
 EMAIL_HOST = "smtp.gmail.com"<br />
 EMAIL_PORT = 587<br />
 EMAIL_USE_TLS = True<br />
-EMAIL_HOST_PASSWORD = 'PASSWORD' <!--- put your email password here.)--><br />
+EMAIL_HOST_PASSWORD = 'PASSWORD' <!--- put your email password here.)---><br />
 EMAIL_RECEIVER_LIST = ['RECEIVER1','RECEIVER2']<br />
 
 
@@ -38,6 +38,6 @@ CELERY_TIMEZONE = 'Asia/Kolkata'<br />
 CELERY_BEAT_SCHEDULE = {<br />
                 'hourly_pullevents': {<br />
                              'task': 'telecom.tasks.send_email_task',<br />
-                                      'schedule': crontab(minute='*/2', hour='*'),  <!--- This will send email after every 2 min.--><br />
+                                      'schedule': crontab(minute='*/2', hour='*'),  <!--- This will send email after every 2 min.---><br />
                                       },
 
