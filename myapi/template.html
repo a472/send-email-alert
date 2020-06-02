@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Telecom report</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            strong {color: hotpink;}
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Customer churn Analysis...</h1>
+        <div>
+            <h3>Variables...</h3>
+            <ul>
+                <li><strong>Churn: </strong>1 if customer cancelled service, 0 if not</li>
+                <li><strong>AccountWeeks: </strong>number of weeks customer has had active account</li>
+                <li><strong>ContractRenewal: </strong>1 if customer recently renewed contract, 0 if not</li>
+                <li><strong>DataPlan: </strong>1 if customer has data plan, 0 if not</li>
+                <li><strong>DataUsage: </strong>gigabytes of monthly data usage</li>
+                <li><strong>CustServCalls: </strong>number of calls into customer service</li>
+                <li><strong>DayMins: </strong>average daytime minutes per month</li>
+                <li><strong>DayCalls: </strong>average number of daytime calls</li>
+                <li><strong>MonthlyCharge: </strong>average monthly bill</li>
+                <li><strong>OverageFee: </strong> largest overage fee in last 12 months</li>
+                <li><strong>RoamMins: </strong> average number of roaming minutes</li>
+            </ul>
+        </div>
+        
+        <p><h3 style="color: blue;">Analysis Report = <strong style="color: rgb(236, 15, 15);">PFA</strong> </h3></p>
+
+        <h4>What type of customers are most likely to churn? Why?</h4>
+        <p>From the aboved analysis, customers with higher monthly bills are more likely to churn, especially for people who use calling service alot. The group that is most likely to churn are
+            <ul>
+                <li>customers who did not purchase a data plan, but still use our roaming service.</li>
+                <li>customers who did not purchase a data plan and still using our calling service aboved the average.</li>
+            </ul>
+            <p>Two most useful predictors for churn are: <strong>DaysMin</strong>  and <strong>Monthlybll</strong>. </p>
+
+        </p>
+        <script src="" async defer></script>
+    </body>
+</html>
